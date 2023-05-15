@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       <link rel="stylesheet" href="./style2.css">
+       <style>
+        body {
+          font-family: Arial, sans-serif;
+          color: aliceblue;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          display: flex;
+          background: linear-gradient(132deg, rgb(4, 6, 27), #0f77bd);
+        }
+        
+        .card {
+         display: flex;
+         flex-direction: column; 
+          background-color: rgba(40, 41, 41, 0.8);
+          width: 80vw;
+          border: 0.5px solid #464e43f3;
+          border-radius: 15px;
+        }
+      
+        
+        p {
+          margin: 3ch;
+          margin-bottom: 10px;
+          position: relative;
+        
+          font-size: 2ch;
+        }
+        
+        ul {
+          font-size: 2ch;
+          list-style-type:decimal;
+          margin-left: 2em;
+          margin-bottom: -10px;
+        }
+      
+        li {
+          margin-bottom: 0.5em;
+        }
+      </style>
+      
+    </head>
+<body>
+    <h1>Chapitre 5 : Système de Gestion de Version</h1>
+    <div class="card">
+        <p>  Git est un logiciel de versioning (gestion de version) créé par Linus Torvalds en 2005.
+            Il permet de conserver un historique des modifications effectuées sur un projet, ce qui facilite la gestion de projets et la collaboration en équipe en conservant un historique des changements effectués sur des fichiers.
+            Les logiciels de gestion de version peuvent être construits selon deux modèles :
+            <ul>
+           <li> Le modèle centralisé, dans ce cas, la source du code du projet est hébergée sur un serveur distant central et les utilisateurs doivent se connecter à ce serveur pour travailler sur ce code.
+            <li>Le modèle décentralisé, on trouve le code source du projet est hébergé sur un serveur distant mais chaque utilisateur est invité à télécharger et à héberger l’intégralité du code source sur sa propre machine.
+            Et ce modèle a plusieurs avantages par rapport au modèle centralisé, tels que la simplicité, flexibilité et la sécurité.
+        </ul></p>
+        <p>Et ce modèle a plusieurs avantages par rapport au modèle centralisé, tels que la simplicité, flexibilité et la sécurité.
+          il existe plusieurs interfaces pour installer et utiliser Git, notamment que c’est le seul moyen d’avoir accès à toutes les commandes Git et que tout le monde peut suivre le cours de la même façon.
+          Il explique comment configurer Git en utilisant la commande « git config » pour enregistrer certaines données, pour une utilisation ultérieure.
+          Git est un système de gestion de version open source qui permet de gérer les modifications apportées à un projet. Pour utiliser Git, il faut créer un dépôt Git en important un répertoire existant ou en clonant un dépôt Git existant.
+          Avant cela, il est important de comprendre comment Git fonctionne.Git considère les données comme des instantanés. À chaque enregistrement de l'état d'un projet, Git prend un instantané du contenu de l'espace de travail et enregistre une référence à cet instantané.
+          Chaque instantané est stocké dans une base de données locale.
+          Avoir l'historique complet d'un projet localement permet de réaliser la plupart des opérations de Git localement, ce qui rend le travail plus rapide et agréable.
+          Git utilise des états pour suivre les modifications des fichiers d'un projet, les fichiers sont soit "suivis" soit "non suivis". 
+          Les fichiers suivis peuvent être modifiés, indexés ou validés. Les états de fichiers sont associés à des zones de travail dans Git, qui comprennent le répertoire de travail, la zone d'index et le répertoire Git.
+          Le processus de travail consiste à travailler sur les fichiers dans le répertoire de travail, à les indexer et à les valider pour les ajouter au répertoire Git. 
+          Pour utiliser Git avec des projets existants, vous pouvez utiliser cd path pour naviguer dans les répertoires et dir pour afficher les fichiers et dossiers.
+          git init initialise un dépôt Git et crée un sous-répertoire .git pour stocker les fichiers nécessaires.
+          git status vous permet de voir l'état des fichiers de votre répertoire.
+          Voici une autre version : pour ajouter des fichiers à l'historique de version, vous pouvez utiliser la commande git add.
+          Vous pouvez ajouter un fichier spécifique, un répertoire entier ou tous les fichiers correspondant à un schéma de fichier en utilisant les fileglobs.
+          Par exemple, git add *.txt ajoute tous les fichiers du projet avec l'extension .txt.Dans Git, la commande "git status" permet de voir les fichiers ajoutés à l'index.
+          La commande "git add" peut indexer des fichiers déjà sous suivi de version et placer sous suivi des fichiers non suivi, et a ajouté les nouveaux fichiers à l'index.
+          Pour ajouter ou modifier des fichiers dans un projet et actualiser notre dépôt Git, utilisez git add  pour ajouter un fichier spécifique ou git add . pour ajouter tous les fichiers modifiés.
+          Ensuite, utilisez git commit -m "message" pour enregistrer les modifications dans le dépôt Git.
+          Pour enregistrer toujours la dernière version d'un fichier, il est important d'effectuer un git add juste avant un git commit.
+          Vous pouvez également utiliser git commit -a pour ajouter et valider les fichiers modifiés en une seule commande.La commande git log permet de consulter l'historique des modifications Git.
+          Elle affiche la liste des commits réalisés, avec les informations suivantes pour chaque commit : somme de contrôle SHA-1, nom et adresse e-mail de l'auteur, date et message du commit.
+          Les commits sont triés du plus récent au plus ancien.Git gère les branches avec des pointeurs vers les commits. La branche master est un fichier contenant l'empreinte SHA-1 du commit sur lequel elle pointe.
+          Créer une nouvelle branche crée simplement un nouveau pointeur vers un commit. La branche master se déplace automatiquement à chaque nouveau commit.
+          </p>
+    </div>
+</body>
+</html>

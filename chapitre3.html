@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       <link rel="stylesheet" href="./style2.css">
+       <style>
+        /* Existing styles */
+        body {
+          font-family: Arial, sans-serif;
+          color: aliceblue;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          display: flex;
+          background: linear-gradient(132deg, rgb(4, 6, 27), #0f77bd);
+        }
+        h2{
+            color: rgb(235, 182, 10);
+            padding-left: 5%;
+        }
+        hr{
+        margin: 5%;
+        }
+        .card {
+         display: flex;
+         flex-direction: column; 
+          background-color: rgba(40, 41, 41, 0.8);
+          width: 80vw;
+          border: 0.5px solid #464e43f3;
+          border-radius: 15px;
+        }
+
+        .chapter-content {
+     font-size: 20px;
+     margin-bottom: 10px;
+     position: relative;
+   }
+   .chapter-content  {
+     margin-top: 20px;
+     color: #e7e7e7;
+   }
+   .chapter-content p {
+     margin: 10px 30px;
+   }
+      </style>
+      
+    </head>
+    <body><h1 class="chapter-title">Chapitre 3 : Le modèle OSI</h1>
+        <div class="chapter-content">
+            <div class="card"><div id="c3">
+             <h2> Composants de Réseau Informatique : Cartes Réseau, Switchs et Hubs </h2>
+          <p>Dans un réseau informatique, les composants matériels essentiels sont la carte réseau, le switch et le hub. La carte réseau, présente dans les appareils tels que les ordinateurs, serveurs et imprimantes, permet la connexion au réseau. Elle reçoit et transmet les informations provenant d'autres appareils du réseau. Les cartes réseau peuvent être connectées via un câble RJ45 ou prendre en charge les connexions Wi-Fi.
+
+            Le switch est utilisé pour connecter plusieurs machines ou appareils au sein d'un réseau local. Il vérifie l'adresse MAC de l'appareil afin de transmettre les données uniquement à l'appareil destinataire, grâce à une table de correspondance des adresses.
+            
+            Le hub, quant à lui, connecte également plusieurs machines dans un réseau local. Cependant, contrairement au switch, il transmet les informations à tous les appareils connectés, ce qui est moins efficace. De nos jours, les switchs sont préférés aux hubs.
+            
+            En résumé, la carte réseau permet la connexion d'un appareil au réseau, tandis que le switch et le hub facilitent la connexion de plusieurs machines au sein d'un réseau local.
+          </p><hr><p><h2> OSI et RCP/IP :</h2><br>
+            <p>
+                Le modèle OSI est un standard de communication qui définit les règles de connexion des appareils dans un réseau. Il se compose de 7 couches ayant chacune un rôle spécifique dans la transmission des données. Par exemple, la couche physique s'occupe de l'envoi des données sur un câble ou un réseau Wi-Fi, tandis que la couche transport achemine les données de l'émetteur au récepteur.
+
+                Bien que moins utilisé aujourd'hui, le modèle OSI reste une référence pour la conception des réseaux informatiques. Le modèle TCP/IP est plus couramment utilisé, fusionnant plusieurs couches du modèle OSI. Par exemple, les couches application, présentation et session du modèle OSI sont regroupées en une seule couche dans le modèle TCP/IP.
+                
+                En résumé, le modèle OSI définit les règles de connexion des appareils dans un réseau à travers différentes couches. Le modèle TCP/IP est plus répandu et regroupe certaines couches du modèle OSI</p><hr><p>
+              <h2>Adressage IP et types d'adresses réseau</h2><br><p>
+                L'adressage est essentiel dans les communications réseau, permettant l'identification unique des unités en communication et utilisant des protocoles d'échange de données.
+
+                L'adresse IP (Internet Protocol) est un numéro qui identifie chaque ordinateur dans un réseau. Il existe deux modes d'adressage : IPV4 et IPV6. IPV4 utilise des adresses composées de 4 octets (32 bits) exprimés en décimal séparés par des points, tandis qu'IPV6 utilise des adresses codées sur 128 bits représentées en hexadécimal et séparées par des ":".
+                
+                Dans une adresse IPV4, les 4 octets se composent d'une partie réseau et d'une partie hôte. La partie réseau est identique pour tous les hôtes d'un même réseau, tandis que la partie hôte varie. Différents types d'adresses IPV4 existent, tels que l'adresse réseau, l'adresse de diffusion et les adresses hôtes.
+                
+                Le masque de réseau et de sous-réseaux délimite
+                
+                </p>
+         </div>
+      </div></div>
+</body>
+</html>
